@@ -4,6 +4,7 @@ go 1.25.6
 
 require (
 	github.com/caarlos0/env/v11 v11.3.1
+	github.com/confluentinc/confluent-kafka-go/v2 v2.13.0
 	github.com/go-chi/chi/v5 v5.2.5
 	github.com/go-sql-driver/mysql v1.9.3
 	github.com/joho/godotenv v1.5.1
