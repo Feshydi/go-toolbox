@@ -1,0 +1,17 @@
+services:
+  app:
+    container_name: "service-go"
+    build:
+      context: .
+      dockerfile: app.Dockerfile
+      target: develop
+    ports:
+      - "${SERVER_PORT:-8080}:8080"
+    env_file:
+      - ./.env
+    volumes:
+      - .:/app
+
+networks:
+  default:
+    driver: bridge
