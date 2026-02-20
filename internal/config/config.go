@@ -1,11 +1,17 @@
 package config
 
 import (
+	"log/slog"
+
 	"github.com/caarlos0/env/v11"
 	"github.com/joho/godotenv"
 )
 
-type Config struct{}
+type Config struct {
+	Logger struct {
+		Level slog.Level `env:"LOGGER_LEVEL,required"`
+	}
+}
 
 func MustLoad() *Config {
 	_ = godotenv.Load() // TODO: remove in production
