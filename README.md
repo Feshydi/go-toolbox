@@ -17,7 +17,7 @@ The repository evolves as a personal toolbox and a reference for architectural a
 
 ## Requirements
 
-- Go 1.22+
+- Go 1.26+
 
 ## Contribution
 
